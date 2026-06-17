@@ -135,18 +135,7 @@ export function RegisterPage() {
           {...register('confirmPassword')}
         />
 
-        <Select
-          label="Tipo de perfil"
-          required
-          options={[
-            { value: 'leitor', label: 'Leitor' },
-            { value: 'admin', label: 'Administrador' },
-          ]}
-          error={errors.role?.message}
-          {...register('role')}
-        />
-
-        {/* Buttons */}
+        {/* Buttons */
         <div className="flex flex-col sm:flex-row gap-3 pt-2">
           <Button
             type="button"

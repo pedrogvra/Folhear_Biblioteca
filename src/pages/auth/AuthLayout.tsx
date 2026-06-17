@@ -15,7 +15,7 @@ const STATS = [
 
 export function AuthLayout({ children, title, subtitle }: AuthLayoutProps) {
   return (
-    <div className="min-h-screen flex">
+    <div className="w-full min-h-screen flex">
       {/* Left panel — visible only on large screens */}
       <div
         className="hidden lg:flex lg:w-1/2 relative overflow-hidden flex-col justify-center p-12 text-white"
@@ -46,7 +46,7 @@ export function AuthLayout({ children, title, subtitle }: AuthLayoutProps) {
       </div>
 
       {/* Right panel — the form */}
-      <div className="flex-1 relative bg-gradient-to-br from-[#DDF8C3] via-[#F9FFFB] to-[#A8E1DF] flex items-center justify-center p-4">
+      <div className="flex-1 relative bg-gradient-to-br from-[#DDF8C3] via-[#F9FFFB] to-[#A8E1DF] flex items-center justify-center p-4 min-h-screen">
         {/* Decorative blobs */}
         <div
           className="absolute top-0 left-0 w-80 h-80 rounded-full opacity-30 blur-3xl -translate-x-1/2 -translate-y-1/2 pointer-events-none"
@@ -59,12 +59,12 @@ export function AuthLayout({ children, title, subtitle }: AuthLayoutProps) {
 
         <div className="relative w-full max-w-md animate-fade-in">
           {/* Logo (mobile only) */}
-          <div className="text-center -mb-8">
-            <img src="/folhear-logo.svg" alt="Folhear" className="w-56 h-56 mx-auto" />
+          <div className="text-center -mb-8 lg:hidden">
+            <img src="/folhear-logo.svg" alt="Folhear" className="w-40 h-40 mx-auto" />
           </div>
 
           {/* Card */}
-          <div className="bg-white rounded-2xl shadow-xl border border-gray-100 p-7">
+          <div className="bg-white rounded-2xl shadow-xl border border-gray-100 p-6 sm:p-7">
             <div className="mb-5">
               <h2 className="text-xl font-semibold text-gray-800">{title}</h2>
               {subtitle && <p className="text-sm text-gray-500 mt-1">{subtitle}</p>}
@@ -72,7 +72,7 @@ export function AuthLayout({ children, title, subtitle }: AuthLayoutProps) {
             {children}
           </div>
 
-          <p className="text-center text-xs text-gray-400 mt-5">
+          <p className="text-center text-xs text-gray-400 mt-5 px-2">
             © {new Date().getFullYear()} Folhear Biblioteca — Todos os direitos reservados
           </p>
         </div>

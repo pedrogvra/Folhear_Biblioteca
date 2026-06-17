@@ -103,13 +103,6 @@ export function LoginPage() {
           Entrar
         </Button>
 
-        {/* Demo credentials hint */}
-        <div className="p-3 rounded-lg text-xs text-gray-500 border" style={{ backgroundColor: '#F9FFFB', borderColor: '#DDF8C3' }}>
-          <p className="font-semibold text-gray-600 mb-1">🔐 Credenciais de demonstração:</p>
-          <p><strong>Admin:</strong> admin@folhear.com / admin123</p>
-          <p><strong>Leitor:</strong> leitor@folhear.com / leitor123</p>
-        </div>
-
         <div className="pt-2 text-center text-sm text-gray-500">
           Não tem uma conta?{' '}
           <Link
