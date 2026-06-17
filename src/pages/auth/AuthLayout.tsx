@@ -15,7 +15,7 @@ const STATS = [
 
 export function AuthLayout({ children, title, subtitle }: AuthLayoutProps) {
   return (
-    <div className="w-full min-h-screen flex">
+    <div className="w-screen h-screen flex">
       {/* Left panel — visible only on large screens */}
       <div
         className="hidden lg:flex lg:w-1/2 relative overflow-hidden flex-col justify-center p-12 text-white"
@@ -46,7 +46,7 @@ export function AuthLayout({ children, title, subtitle }: AuthLayoutProps) {
       </div>
 
       {/* Right panel — the form */}
-      <div className="flex-1 relative bg-gradient-to-br from-[#DDF8C3] via-[#F9FFFB] to-[#A8E1DF] flex items-center justify-center p-4 min-h-screen">
+      <div className="flex-1 relative bg-gradient-to-br from-[#DDF8C3] via-[#F9FFFB] to-[#A8E1DF] flex items-center justify-center p-4 h-screen">
         {/* Decorative blobs */}
         <div
           className="absolute top-0 left-0 w-80 h-80 rounded-full opacity-30 blur-3xl -translate-x-1/2 -translate-y-1/2 pointer-events-none"
