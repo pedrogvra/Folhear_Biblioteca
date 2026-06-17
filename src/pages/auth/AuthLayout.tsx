@@ -46,7 +46,7 @@ export function AuthLayout({ children, title, subtitle }: AuthLayoutProps) {
       </div>
 
       {/* Right panel — the form */}
-      <div className="flex-1 relative bg-gradient-to-br from-[#DDF8C3] via-[#F9FFFB] to-[#A8E1DF] flex items-center justify-center p-4 h-screen">
+      <div className="flex-1 relative bg-gradient-to-br from-[#DDF8C3] via-[#F9FFFB] to-[#A8E1DF] flex items-center justify-center h-screen overflow-hidden">
         {/* Decorative blobs */}
         <div
           className="absolute top-0 left-0 w-80 h-80 rounded-full opacity-30 blur-3xl -translate-x-1/2 -translate-y-1/2 pointer-events-none"
@@ -57,7 +57,7 @@ export function AuthLayout({ children, title, subtitle }: AuthLayoutProps) {
           style={{ backgroundColor: '#88C7DB' }}
         />
 
-        <div className="relative w-full max-w-md animate-fade-in">
+        <div className="relative w-full max-w-md animate-fade-in px-4 py-8">
           {/* Logo (mobile only) */}
           <div className="text-center -mb-8 lg:hidden">
             <img src="/folhear-logo.svg" alt="Folhear" className="w-40 h-40 mx-auto" />
