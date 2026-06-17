@@ -135,7 +135,7 @@ export function RegisterPage() {
           {...register('confirmPassword')}
         />
 
-        {/* Buttons */
+        {/* Buttons */}
         <div className="flex flex-col sm:flex-row gap-3 pt-2">
           <Button
             type="button"
