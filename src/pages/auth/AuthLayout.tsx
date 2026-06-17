@@ -15,7 +15,7 @@ const STATS = [
 
 export function AuthLayout({ children, title, subtitle }: AuthLayoutProps) {
   return (
-    <div className="w-screen h-screen flex">
+    <div className="w-screen h-screen flex overflow-x-hidden">
       {/* Left panel — visible only on large screens */}
       <div
         className="hidden lg:flex lg:w-1/2 relative overflow-hidden flex-col justify-center p-12 text-white"
@@ -46,7 +46,7 @@ export function AuthLayout({ children, title, subtitle }: AuthLayoutProps) {
       </div>
 
       {/* Right panel — the form */}
-      <div className="flex-1 relative bg-gradient-to-br from-[#DDF8C3] via-[#F9FFFB] to-[#A8E1DF] flex items-start justify-center h-screen overflow-y-auto py-8">
+      <div className="flex-1 relative bg-gradient-to-br from-[#DDF8C3] via-[#F9FFFB] to-[#A8E1DF] flex flex-col items-center justify-start h-screen overflow-y-auto overflow-x-hidden py-8">
         {/* Decorative blobs */}
         <div
           className="absolute top-0 left-0 w-80 h-80 rounded-full opacity-30 blur-3xl -translate-x-1/2 -translate-y-1/2 pointer-events-none"
@@ -57,7 +57,7 @@ export function AuthLayout({ children, title, subtitle }: AuthLayoutProps) {
           style={{ backgroundColor: '#88C7DB' }}
         />
 
-        <div className="relative w-full max-w-md animate-fade-in px-4 py-8">
+        <div className="relative w-full max-w-md animate-fade-in px-4 py-8 mx-auto">
           {/* Logo */}
           <div className="text-center mb-0.5">
             <img src="/folhear-logo.svg" alt="Folhear" className="w-40 h-40 mx-auto" />
